@@ -1,7 +1,8 @@
-const container = document.querySelector(".container");
+const container = document.querySelector("div");
 
-for(let i = 0; i < 17; i++){
+
+for(let i = 0; i < 16; i++){
     const div = document.createElement("div");
 
-    container.appendChild("div");
+    container.appendChild(div);
 }
