@@ -7,19 +7,27 @@ h1{
     text-align: center;
 }
 
-#container{
+section{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    border: 1px solid black;
-    width: 700px;
-    height: 900px;
-    padding: 20px;
 }
 
-#container div{
+#container{
+    border: 1px solid black;
+    padding: 18px;
+    height: 1000px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+#inContainer{
+    display: flex;
     flex: 1;
-    border: 2px solid black;
-    padding: 12px;
-    margin: 2px;
+}
+
+#inContainer div{
+    border: 1px solid black;
+    padding: 3px;
+    flex: 1;
 }

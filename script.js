@@ -1,11 +1,16 @@
 const container = document.querySelector("div");
 const div = [[],[]];
 
-for(let i = 1; i < 2; i++){
-    for(let j = 1; j < 2; j++){
+for(let i = 1; i < 101; i++){
+    const inContainer = document.createElement("div");
+    for(let j = 1; j < 101; j++){
         div[[i],[j]] = document.createElement("div");
 
-        container.appendChild(div[[i],[j]]);
+        inContainer.appendChild(div[[i],[j]]);
 
     }
+    inContainer.setAttribute("id", "inContainer");
+    container.appendChild(inContainer);
 }
+
+console.log(container.style.height);
